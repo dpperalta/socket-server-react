@@ -32,6 +32,9 @@
         </div>
     </div>
 
+    <h1 class="mt-5">Acceso denegado</h1>
+    <hr/>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js" integrity="sha512-+l9L4lMTFNy3dEglQpprf7jQBhQsQ3/WvOnjaN/+/L4i0jOstgScV0q2TjfvRF4V+ZePMDuZYIQtg5T4MKr+MQ==" crossorigin="anonymous"></script>
     <script>
@@ -53,16 +56,6 @@
         socket.on('mensaje-from-server', (data) => {
             mensajes.innerHTML += `<li>${ data.texto }</li>`;
         });
-
-        /* socket.on('mensaje-bienvenida', (data) => {
-            console.log('El servidor emitió: ', data.msg, 'el:', data.fecha);
-        }); */
-        /* setTimeout(() => {
-            socket.emit('mensaje-cliente', {
-                msg: 'Hola servidor',
-                nombre: 'Diego'
-            })
-        }, 2000); */
     </script>
 </body>
 
